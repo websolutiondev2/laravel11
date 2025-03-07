@@ -10,5 +10,5 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('index');
 });
-
-Route::get('/user',[User::class,'index']);
+Route::get('/user/{name}',[User::class,'index']);
+// Route::get('/user',[User::class,'index'])->middleware('Check');

@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class User extends Controller
 {
     //
-    public function index()
+    public function index($name)
     {
-        echo "Welcome";
+        return "Welcome".$name;
     }
 }
